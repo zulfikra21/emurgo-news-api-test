@@ -16,7 +16,7 @@ services:
         - 8095
     volumes:
         - ".:/home/app"
-    command: ./actix-scaffolding
+    command: "./actix-scaffolding"
     networks:
         - main-network
     env_file:
