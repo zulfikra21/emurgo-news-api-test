@@ -3,23 +3,15 @@
 
 ## Installation
 
+### this API was build with my existing actix scaffolding
+
 ## Prerequisites
 -   Rust 1.75 or latest version  
-- create a `.env` file by renaming the `.env-example` file to .env or set the necessary environment variables
+-   make sure you've installed openssl version 3 if you want to run using Docker
 
 ## How to Run
-- Linux Distro : Run the app using the command ``./start.sh``  
-- Command Line : Run the app using the command  `cargo run`
+- Docker compose : Run the app using the command ``./start.sh``  
+- Linux CLI directly : 
+    - run ```docker compose up -d redis```
+    - change REDIS_URL inside ```.env``` file from ``redis://redis:6378`` to ```redis://localhost:6378``` then run command ```cargo run```
 
-
-## Features
-- MVC Architect
-- Diesel ORM
-- Magic_crypt
-- Middleware
-- Sailfish template engine
-- Chrono Date & Time library
-- Uuid
-- REST API
-- Lettre email transport 
-- GraphQL
