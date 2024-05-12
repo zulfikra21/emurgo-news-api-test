@@ -1,4 +1,4 @@
-FROM rust:1.75-slim-bookworm
+FROM rust:1.75-slim-bullseye
 
 
 WORKDIR /home/app
@@ -10,5 +10,3 @@ RUN apt-get update && apt-get install -y
 RUN apt-get upgrade -y
 RUN apt install pkg-config -y
 RUN apt-get install libudev-dev -y
-RUN apt-get install -y libssl1.1 
-
