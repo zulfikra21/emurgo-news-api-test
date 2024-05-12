@@ -11,9 +11,9 @@ services:
     hostname: backend
     build: .
     ports:
-        - "8090:8090"
+        - "8095:8095"
     expose:
-        - 8099
+        - 8095
     volumes:
         - ".:/home/app"
     command: ./actix-scaffolding
